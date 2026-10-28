@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScroll" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/screen_title" android:textSize="24sp"
+            android:textColor="#222222" android:textStyle="bold" android:paddingBottom="12dp" />
+        <TextView android:id="@+id/incomeTotal" style="@style/Total" android:textColor="#2E6B46" />
+        <TextView android:id="@+id/expenseTotal" style="@style/Total" android:textColor="#A33B39" />
+        <TextView android:id="@+id/balanceTotal" style="@style/Total" android:textStyle="bold" />
+        <TextView style="@style/SectionTitle" android:text="@string/add_title" />
+        <RadioGroup android:id="@+id/entryType" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/incomeType" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:minHeight="48dp" android:text="@string/income" />
+            <RadioButton android:id="@+id/expenseType" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:minHeight="48dp" android:checked="true" android:text="@string/expense" />
+        </RadioGroup>
+        <EditText android:id="@+id/amountInput" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="48dp"
+            android:hint="@string/amount_hint" android:inputType="numberDecimal"
+            android:singleLine="true" android:digits="0123456789.," android:maxLength="12" />
+        <EditText android:id="@+id/noteInput" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="48dp"
+            android:hint="@string/note_hint" android:inputType="textCapSentences"
+            android:singleLine="true" android:maxLength="100" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="8dp">
+            <Button android:id="@+id/dateButton" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1.2"
+                android:textAllCaps="false" android:minHeight="48dp" />
+            <Button android:id="@+id/addButton" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="@string/add" android:textAllCaps="false" android:minHeight="48dp" />
+        </LinearLayout>
+        <TextView style="@style/SectionTitle" android:text="@string/table_title" />
+        <TextView android:id="@+id/entryCount" style="@style/Caption" android:paddingBottom="8dp" />
+        <TextView android:id="@+id/emptyText" style="@style/Caption"
+            android:text="@string/empty_text" android:visibility="gone" android:padding="16dp" />
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:scrollbars="horizontal" android:fadeScrollbars="false">
+            <TableLayout android:id="@+id/entriesTable" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="vertical" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

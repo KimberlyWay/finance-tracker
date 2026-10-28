@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Мои финансы</string>
+    <string name="screen_title">Учёт финансов</string>
+    <string name="total_income">Доходы: %1$s</string>
+    <string name="total_expense">Расходы: %1$s</string>
+    <string name="total_balance">Остаток: %1$s</string>
+    <string name="add_title">Новая запись</string>
+    <string name="income">Доход</string>
+    <string name="expense">Расход</string>
+    <string name="amount_hint">Сумма, ₽</string>
+    <string name="note_hint">Описание, например «Продукты»</string>
+    <string name="date_button">Дата: %1$s</string>
+    <string name="add">Добавить</string>
+    <string name="table_title">Таблица операций</string>
+    <string name="entry_count">Записей: %1$d</string>
+    <string name="date_header">Дата</string>
+    <string name="note_header">Описание</string>
+    <string name="income_header">Доход, ₽</string>
+    <string name="expense_header">Расход, ₽</string>
+    <string name="empty_text">Записей пока нет</string>
+    <string name="invalid_amount">Введите сумму от 0,01 до 999 999 999,99, не более двух знаков после запятой</string>
+    <string name="added">Запись добавлена</string>
+    <string name="delete_title">Удалить запись?</string>
+    <string name="delete_details">%1$s\n%2$s\n%3$s: %4$s</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="row_details">%1$s, %2$s, %3$s, %4$s. Нажмите, чтобы удалить запись.</string>
+    <string name="dash">—</string>
+</resources>

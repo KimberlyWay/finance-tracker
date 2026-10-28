@@ -1,0 +1,27 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#52675C</item>
+        <item name="android:statusBarColor">#52675C</item>
+        <item name="android:navigationBarColor">#52675C</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+    </style>
+    <style name="Caption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#555555</item>
+    </style>
+    <style name="SectionTitle" parent="Caption">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="Total" parent="Caption">
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+</resources>
